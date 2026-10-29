@@ -1,0 +1,715 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dubai New Year Party Blogs & Guides | NewYearParty</title>
+  <meta name="description" content="Explore Dubai New Year party guides, yacht party ideas, dhow cruise celebrations and New Year's Eve planning tips from NewYearParty. New articles coming soon.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/blogs.html">
+
+  <meta property="og:title" content="Dubai New Year Party Blogs & Guides | NewYearParty">
+  <meta property="og:description" content="Discover upcoming Dubai New Year party guides, yacht celebrations and dhow cruise tips.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --navy: #071629;
+      --navy-light: #102844;
+      --gold: #d8a747;
+      --gold-light: #f7e5b9;
+      --text: #222b38;
+      --muted: #697386;
+      --border: #e7e8eb;
+      --light: #f7f8fa;
+      --white: #fff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--white);
+    }
+
+    a { text-decoration: none; }
+
+    .container {
+      width: 86%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+    header {
+      padding: 17px 7%;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      margin: 0;
+      color: var(--navy);
+      font-size: 25px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .logo span { color: var(--gold); }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 23px;
+    }
+
+    nav a {
+      color: #252c36;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover, nav a.active { color: #a9781c; }
+
+    .menu-toggle {
+      display: none;
+      padding: 8px 12px;
+      border: 1px solid var(--gold);
+      border-radius: 6px;
+      color: var(--navy);
+      background: white;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 75px 7%;
+      color: white;
+      background:
+        linear-gradient(rgba(4,17,33,.70), rgba(4,17,33,.78)),
+        url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+    }
+
+    .hero-content { max-width: 820px; }
+
+    .eyebrow {
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(35px, 5vw, 52px);
+      line-height: 1.15;
+      margin: 14px 0 18px;
+    }
+
+    .hero p {
+      max-width: 730px;
+      margin: auto;
+      color: #f0f2f6;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 23px;
+      border-radius: 6px;
+      font-weight: 700;
+      margin: 8px 5px 0;
+      transition: .2s;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      color: white;
+      border: 1px solid rgba(255,255,255,.8);
+    }
+
+    .btn-secondary:hover { background: rgba(255,255,255,.1); }
+
+    /* BLOG SECTION */
+    .blog-section {
+      padding: 78px 0;
+      background: white;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 35px;
+      line-height: 1.25;
+      color: var(--navy);
+      margin: 0 0 15px;
+    }
+
+    .blog-intro {
+      max-width: 790px;
+      margin: 0 auto 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* COMING SOON STATE */
+    .coming-soon {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 50px 30px;
+      text-align: center;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .coming-icon {
+      width: 70px;
+      height: 70px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
+      background: var(--gold-light);
+      color: var(--navy);
+      border-radius: 50%;
+      font-size: 30px;
+    }
+
+    .coming-soon h3 {
+      margin: 0 0 12px;
+      font-size: 29px;
+      color: var(--navy);
+    }
+
+    .coming-soon p {
+      max-width: 640px;
+      margin: 0 auto 14px;
+      color: var(--muted);
+    }
+
+    /* FUTURE ARTICLE GRID */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.05);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,.1);
+    }
+
+    .article-image {
+      display: block;
+      width: 100%;
+      height: 215px;
+      object-fit: cover;
+      background: var(--light);
+    }
+
+    .article-content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 25px;
+    }
+
+    .article-label {
+      display: inline-block;
+      width: fit-content;
+      margin-bottom: 14px;
+      padding: 5px 11px;
+      border-radius: 20px;
+      background: #f8f0df;
+      color: #805b17;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .article-card h2 {
+      margin: 0 0 12px;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+
+    .article-card h2 a {
+      color: var(--navy);
+    }
+
+    .article-card h2 a:hover { color: #a9781c; }
+
+    .article-date {
+      margin: 0 0 9px;
+      color: #8a6c37;
+      font-size: 13px;
+    }
+
+    .article-description {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: auto;
+      color: #8a641d;
+      font-weight: 700;
+    }
+
+    .read-more:hover { text-decoration: underline; }
+
+    /* INTERNAL LINK SECTION */
+    .explore-section {
+      padding: 70px 0;
+      background: var(--light);
+    }
+
+    .explore-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .explore-card {
+      padding: 27px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .explore-card h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin: 0 0 10px;
+    }
+
+    .explore-card p {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0 0 17px;
+    }
+
+    .internal-link {
+      color: #89621c;
+      font-weight: 700;
+    }
+
+    .internal-link:hover { text-decoration: underline; }
+
+    /* CTA */
+    .cta {
+      padding: 75px 7%;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(rgba(4,17,33,.78), rgba(4,17,33,.83)),
+        url("https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+    }
+
+    .cta h2 {
+      font-size: clamp(29px, 4vw, 37px);
+      margin: 0 0 14px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      color: #e0e6ee;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 38px 0 20px;
+      background: #04101f;
+      color: #d0d8e3;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 30px;
+      padding-bottom: 25px;
+    }
+
+    footer h3, footer h4 {
+      color: var(--gold-light);
+      margin: 0 0 12px;
+    }
+
+    footer p, footer li {
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    footer ul { list-style: none; padding: 0; margin: 0; }
+    footer li { margin: 7px 0; }
+    footer a { color: #e0e6ee; }
+    footer a:hover { color: var(--gold-light); }
+
+    .copyright {
+      border-top: 1px solid #243348;
+      padding-top: 18px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    [hidden] { display: none !important; }
+
+    @media (max-width: 950px) {
+      .blog-grid, .explore-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 650px) {
+      header { flex-wrap: wrap; }
+      .menu-toggle { display: block; }
+      nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 13px;
+        padding: 12px 0;
+      }
+      nav.open { display: flex; }
+      .hero { min-height: 360px; padding: 60px 6%; }
+      .hero p { font-size: 16px; }
+      .blog-section { padding: 55px 0; }
+      .section-title { font-size: 29px; }
+      .blog-grid, .explore-grid, .footer-grid { grid-template-columns: 1fr; }
+      .article-content { padding: 23px; }
+      .coming-soon { padding: 36px 20px; }
+      .coming-soon h3 { font-size: 25px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="index.html">NewYear<span>Party</span></a>
+
+  <button class="menu-toggle" id="menuToggle"
+          aria-label="Toggle navigation" aria-expanded="false">
+    Menu ☰
+  </button>
+
+  <nav id="mainNav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a class="active" href="blogs.html" aria-current="page">Blogs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">NewYearParty Journal</span>
+      <h1>Dubai New Year Party Blogs &amp; Guides</h1>
+      <p>
+        Discover celebration ideas, yacht party guides, dhow cruise information
+        and practical tips for planning New Year's Eve in Dubai.
+      </p>
+      <a href="#latest-articles" class="btn btn-primary">Explore Blog Articles</a>
+      <a href="services.html" class="btn btn-secondary">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- BLOG LISTING -->
+  <section class="blog-section" id="latest-articles">
+    <div class="container">
+      <h2 class="section-title">Latest Blog Articles</h2>
+      <p class="blog-intro">
+        Explore upcoming guides to Dubai New Year celebrations, private yacht
+        parties, open deck boat events and dhow cruises. Our articles will offer
+        useful information to help you compare options and plan ahead.
+      </p>
+
+      <!-- Visible until real blog posts are added -->
+      <div class="coming-soon" id="comingSoon">
+        <div class="coming-icon" aria-hidden="true">✦</div>
+        <h3>Our Blog Is Coming Soon!</h3>
+        <p>
+          We are preparing helpful articles about Dubai New Year parties,
+          celebration experiences and planning tips for New Year 2027.
+        </p>
+        <p>
+          In the meantime, explore our listed services or contact us with your questions.
+        </p>
+        <a href="services.html" class="btn btn-primary">View Our Services</a>
+        <a href="contact.html" class="btn btn-secondary"
+           style="color:#071629;border-color:#071629;">Contact Us</a>
+      </div>
+
+      <!-- Published posts will appear here automatically from the data below -->
+      <div class="blog-grid" id="blogGrid" hidden></div>
+    </div>
+  </section>
+
+  <!-- RELEVANT INTERNAL LINKS -->
+  <section class="explore-section">
+    <div class="container">
+      <h2 class="section-title">Explore Dubai New Year Celebrations</h2>
+      <p class="blog-intro">
+        While our blog articles are being prepared, browse these related
+        celebration pages for more information.
+      </p>
+
+      <div class="explore-grid">
+        <article class="explore-card">
+          <h3>New Year Private Yacht Party</h3>
+          <p>
+            Explore private yacht celebration options and review the event
+            details before choosing an experience.
+          </p>
+          <a class="internal-link"
+             href="https://dubainewyearcelebration.com/product/tour/new-year-private-yacht-party/">
+            Explore Private Yacht Parties →
+          </a>
+        </article>
+
+        <article class="explore-card">
+          <h3>Mega Yacht Party Dubai</h3>
+          <p>
+            Discover mega yacht party information and check available
+            inclusions, timings and booking conditions.
+          </p>
+          <a class="internal-link"
+             href="https://dubainewyearcelebration.com/product/tour/mega-yacht-party/">
+            Explore Mega Yacht Parties →
+          </a>
+        </article>
+
+        <article class="explore-card">
+          <h3>Dhow Cruise New Year Party</h3>
+          <p>
+            Find information about dhow cruise celebrations and options
+            for your New Year's Eve plans in Dubai.
+          </p>
+          <a class="internal-link"
+             href="https://dubainewyearcelebration.com/product/tour/dhow-cruise-new-year-party-dubai/">
+            Explore Dhow Cruise Parties →
+          </a>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:28px;">
+        <a class="internal-link" href="about.html">Learn About NewYearParty →</a>
+        <span aria-hidden="true"> &nbsp; | &nbsp; </span>
+        <a class="internal-link" href="contact.html">Contact Us →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Planning Your Dubai New Year 2027?</h2>
+    <p>
+      Explore celebration options and review the details that matter to your plans.
+      Our blog will feature more guides and useful planning information soon.
+    </p>
+    <a href="services.html" class="btn btn-primary">Explore Services</a>
+    <a href="https://dubainewyearcelebration.com/"
+       class="btn btn-secondary">Visit Main Website</a>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>NewYearParty</h3>
+        <p>
+          Explore Dubai New Year celebrations, yacht parties, boat events
+          and dhow cruise options for the festive season.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Information</h4>
+        <p><a href="tel:+971503399740">+971 50 339 9740</a></p>
+        <p><a href="https://wa.me/971503399740">Contact us on WhatsApp</a></p>
+        <p><a href="https://dubainewyearcelebration.com/">dubainewyearcelebration.com</a></p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <span id="currentYear"></span> NewYearParty. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile navigation
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+
+  menuToggle.addEventListener("click", function () {
+    const isOpen = mainNav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  document.getElementById("currentYear").textContent =
+    new Date().getFullYear();
+
+  /*
+    FUTURE BLOG POSTS
+    Add each genuinely published article below.
+    The Coming Soon panel hides automatically when valid posts exist.
+    Article pages and image files must exist at the URLs you provide.
+  */
+  const blogPosts = [
+    /*
+    {
+      title: "How to Choose a Dubai New Year Yacht Party",
+      category: "Dubai New Year Guide",
+      url: "blogs/choose-dubai-new-year-yacht-party.html",
+      image: "images/dubai-new-year-yacht-party.jpg",
+      imageAlt: "Yacht party experience in Dubai",
+      date: "2026-11-15",
+      description: "Discover what to compare when choosing a Dubai New Year yacht party, including event inclusions, timings and booking details."
+    }
+    */
+  ];
+
+  const comingSoon = document.getElementById("comingSoon");
+  const blogGrid = document.getElementById("blogGrid");
+
+  function formatBlogDate(dateString) {
+    const date = new Date(dateString + "T12:00:00");
+    if (Number.isNaN(date.getTime())) return "";
+    return new Intl.DateTimeFormat("en", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    }).format(date);
+  }
+
+  function renderBlogPosts() {
+    const posts = blogPosts
+      .filter(post =>
+        post.title && post.url && post.description && post.date
+      )
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    if (posts.length === 0) {
+      comingSoon.hidden = false;
+      blogGrid.hidden = true;
+      return;
+    }
+
+    comingSoon.hidden = true;
+    blogGrid.hidden = false;
+    blogGrid.replaceChildren();
+
+    posts.forEach(post => {
+      const card = document.createElement("article");
+      card.className = "article-card";
+
+      if (post.image) {
+        const image = document.createElement("img");
+        image.className = "article-image";
+        image.src = post.image;
+        image.alt = post.imageAlt || post.title;
+        image.loading = "lazy";
+        image.onerror = () => image.remove();
+        card.appendChild(image);
+      }
+
+      const content = document.createElement("div");
+      content.className = "article-content";
+
+      if (post.category) {
+        const label = document.createElement("span");
+        label.className = "article-label";
+        label.textContent = post.category;
+        content.appendChild(label);
+      }
+
+      const date = document.createElement("p");
+      date.className = "article-date";
+      date.textContent = formatBlogDate(post.date);
+
+      const heading = document.createElement("h2");
+      const titleLink = document.createElement("a");
+      titleLink.href = post.url;
+      titleLink.textContent = post.title;
+      heading.appendChild(titleLink);
+
+      const description = document.createElement("p");
+      description.className = "article-description";
+      description.textContent = post.description;
+
+      const readMore = document.createElement("a");
+      readMore.className = "read-more";
+      readMore.href = post.url;
+      readMore.textContent = "Read Full Article →";
+      readMore.setAttribute("aria-label", "Read full article: " + post.title);
+
+      content.append(date, heading, description, readMore);
+      card.appendChild(content);
+      blogGrid.appendChild(card);
+    });
+  }
+
+  renderBlogPosts();
+</script>
+
+</body>
+</html>
