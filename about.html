@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About NewYearParty | Dubai New Year Celebrations 2027</title>
+  <meta name="description" content="Discover NewYearParty, your guide to Dubai New Year celebrations, including private yacht parties, mega yacht experiences, dhow cruises and open deck boat parties.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/about.html">
+
+  <style>
+    :root {
+      --navy: #071629;
+      --navy-light: #102844;
+      --gold: #e8b75b;
+      --gold-light: #ffe2a0;
+      --white: #ffffff;
+      --muted: #aebdce;
+      --page: #f5f7fa;
+      --text: #172438;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--white);
+    }
+    a { text-decoration: none; }
+    .container { width: min(1120px, 90%); margin: auto; }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(232,183,91,.25);
+    }
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+    .logo {
+      color: var(--gold);
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 22px;
+    }
+    .nav-links a { color: #fff; font-size: 14px; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    .menu-toggle {
+      display: none;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      background: transparent;
+      padding: 8px 12px;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+
+    .hero {
+      color: white;
+      text-align: center;
+      padding: 105px 20px 100px;
+      background:
+        linear-gradient(115deg, rgba(4,17,33,.94), rgba(7,22,41,.76)),
+        url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    }
+    .eyebrow {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    h1 {
+      max-width: 850px;
+      margin: 14px auto 18px;
+      font-size: clamp(36px, 5.5vw, 59px);
+      line-height: 1.13;
+    }
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #e2eaf3;
+      font-size: 17px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      margin: 12px 8px 0 0;
+      border-radius: 7px;
+      font-weight: 700;
+      transition: .2s;
+    }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-outline { border: 1px solid var(--gold); color: var(--gold-light); }
+    .btn-outline:hover { background: rgba(232,183,91,.12); }
+
+    section { padding: 75px 0; }
+    .section-title { text-align: center; margin-bottom: 35px; }
+    .section-title h2 {
+      color: var(--navy);
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .section-title p { max-width: 760px; margin: auto; color: #657286; }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 42px;
+      align-items: center;
+    }
+    .about-grid h2 {
+      font-size: 34px;
+      line-height: 1.25;
+      color: var(--navy);
+      margin-bottom: 18px;
+    }
+    .about-grid p { color: #566579; margin-bottom: 15px; }
+    .about-image {
+      width: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 18px 45px rgba(7,22,41,.14);
+    }
+    .light-section { background: var(--page); }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .card {
+      padding: 27px;
+      background: white;
+      border: 1px solid #e5eaf0;
+      border-radius: 13px;
+      box-shadow: 0 8px 24px rgba(7,22,41,.05);
+    }
+    .card .number { color: #b27b20; font-size: 14px; font-weight: 800; }
+    .card h3 { color: var(--navy); font-size: 21px; margin: 10px 0; }
+    .card p { color: #657286; font-size: 15px; }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .value {
+      padding: 22px;
+      border-left: 4px solid var(--gold);
+      background: #fff;
+      border-radius: 5px;
+    }
+    .value h3 { color: var(--navy); margin-bottom: 6px; }
+    .value p { color: #657286; }
+    .cta {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+    .cta h2 { font-size: clamp(28px, 4vw, 38px); margin-bottom: 12px; }
+    .cta p { color: var(--muted); max-width: 700px; margin: 0 auto 14px; }
+
+    footer { background: #04101f; color: #c5d0dd; padding: 35px 0 20px; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 30px;
+      padding-bottom: 25px;
+    }
+    footer h3, footer h4 { color: var(--gold); margin-bottom: 12px; }
+    footer p, footer li { font-size: 14px; color: #c5d0dd; }
+    footer ul { list-style: none; }
+    footer li { margin: 6px 0; }
+    footer a { color: #e3eaf2; }
+    footer a:hover { color: var(--gold); }
+    .copyright {
+      border-top: 1px solid #243348;
+      padding-top: 18px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
+      .menu-toggle { display: block; }
+      .navbar { flex-wrap: wrap; padding: 15px 0; }
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+      }
+      .nav-links.open { display: flex; }
+      .about-grid, .cards, .values-grid, .footer-grid { grid-template-columns: 1fr; }
+      .hero { padding: 78px 18px; }
+      section { padding: 55px 0; }
+      .about-image { min-height: 260px; }
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container navbar">
+    <a class="logo" href="index.html">NewYearParty</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">Menu ☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="about.html">About Us</a>
+      <a href="blogs.html#blogs">Blogs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Discover NewYearParty</span>
+      <h1>About Us: Your Guide to Dubai New Year Celebrations</h1>
+      <p>
+        Explore exciting ways to welcome the New Year in Dubai, from yacht
+        parties and open deck boat experiences to memorable dhow cruise celebrations.
+      </p>
+      <a class="btn btn-gold" href="services.html">Explore Our Services</a>
+      <a class="btn btn-outline" href="contact.html">Contact Us</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container about-grid">
+      <div>
+        <span class="eyebrow" style="color:#a36c16;">Who We Are</span>
+        <h2>Helping You Explore New Year Experiences in Dubai</h2>
+        <p>
+          NewYearParty is an informational website created to help visitors
+          discover celebration ideas and event options for New Year's Eve in Dubai.
+          We bring different experiences together so you can explore options that
+          suit your interests, group size and preferred celebration style.
+        </p>
+        <p>
+          Whether you are interested in a private yacht party, a lively mega yacht
+          event, an open deck boat party or a traditional dhow cruise, our website
+          helps you start exploring the possibilities for New Year 2027.
+        </p>
+        <p>
+          Our aim is to make your research easier by presenting event information
+          in a clear, accessible and user-friendly way. We encourage visitors to
+          review the details, inclusions, availability and booking terms of each
+          experience before making a reservation.
+        </p>
+        <a class="btn btn-gold" href="services.html">View Celebration Options</a>
+      </div>
+      <img class="about-image"
+        src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1100&q=85"
+        alt="Dubai skyline at night, a popular setting for New Year celebrations">
+    </div>
+  </section>
+
+  <section class="light-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>What You Can Explore With Us</h2>
+        <p>Discover different ways to celebrate New Year's Eve in Dubai and compare experiences before choosing your plans.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="number">01 / PRIVATE EXPERIENCE</span>
+          <h3>Private Yacht Parties</h3>
+          <p>Explore private yacht celebration options for families, couples and groups looking for a more personal event experience.</p>
+        </article>
+        <article class="card">
+          <span class="number">02 / ON THE WATER</span>
+          <h3>Mega Yacht Celebrations</h3>
+          <p>Discover larger yacht party experiences and review the event details, entertainment and inclusions available for your chosen date.</p>
+        </article>
+        <article class="card">
+          <span class="number">03 / CRUISE EXPERIENCES</span>
+          <h3>Dhow Cruises & Boat Parties</h3>
+          <p>Explore dhow cruises and open deck boat events for a memorable evening on the water during Dubai's festive season.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Approach</h2>
+        <p>We want your search for a Dubai New Year celebration to be simple, informative and convenient.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value">
+          <h3>Clear Information</h3>
+          <p>We aim to present event options in a straightforward format so visitors can compare experiences more easily.</p>
+        </div>
+        <div class="value">
+          <h3>Choice & Flexibility</h3>
+          <p>From private settings to group celebrations, explore different styles and select an option that fits your plans.</p>
+        </div>
+        <div class="value">
+          <h3>Helpful Planning</h3>
+          <p>Review dates, timings, inclusions, meeting points and booking terms before confirming an event.</p>
+        </div>
+        <div class="value">
+          <h3>A Dubai Celebration Focus</h3>
+          <p>Our content focuses on New Year event ideas and celebration experiences in Dubai.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Start Planning Your Dubai New Year 2027</h2>
+      <p>Explore available celebration options and contact us if you need help finding the right event information.</p>
+      <a class="btn btn-gold" href="services.html">Explore Services</a>
+      <a class="btn btn-outline" href="contact.html">Get in Touch</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>NewYearParty</h3>
+        <p>Your guide to exploring Dubai New Year celebrations, yacht parties, boat experiences and dhow cruises.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#blogs">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Information</h4>
+        <p>Phone: <a href="tel:+971503399740">+971 50 339 9740</a></p>
+        <p>Website: <a href="https://dubainewyearcelebration.com/">dubainewyearcelebration.com</a></p>
+      </div>
+    </div>
+    <div class="copyright">
+      © <span id="year"></span> NewYearParty. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
